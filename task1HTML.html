@@ -7,8 +7,48 @@
     <script src="task1AX.js"></script>
     <link href=task1CSS.css rel=stylesheet>
     </head>
+
+
+    <div id="login">
+      <main id="main-holder">
+        <h1 id="login-header">Login</h1>
+        
+        <div id="login-error-msg-holder">
+          <p id="login-error-msg">Invalid username</p>
+        </div>
+        
+        <form id="login-form">
+          <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+          <input type="submit" value="Login"  id="login-submit">
+        </form>
+      
+      </main>
     
-    <body style="background-color:#DFCFBE;">
+    
+      </div>
+
+
+
+    <div id="body">
+    <body  style="background-color:#DFCFBE;">
+
+      
+
+      <div class="bar">
+      
+        <a id="a1" href="#about">About</a>
+        <a id="a2" href="#contact">Contact</a>
+        <a id="a3" class="active" href="#home">Home</a>
+        <div class="dropdown">
+          <p id="user"> </p>
+          <div class="dropdown-content">
+            <button> Log Out </button>
+          </div>
+        </div> 
+        <input type="text"  id="search" onkeyup="myFunction()" placeholder="Course Search">
+      </div>
+
+
     
     <div id=courseList>
     <div id=CL>
@@ -22,10 +62,19 @@
       <p id="coursename" ><b> </b></p>
       <p id="textdesc"> </p>
       <p id="price"> </p>
-      <p id="reviews"> </p>
     </ul>
     </div>
-    
+
+    <div id="reviews">
+      <ul id="rev">
+
+      </ul>
+      </div>
+
+
+  
 
     </body>
+    </div>
     </html>
+    
